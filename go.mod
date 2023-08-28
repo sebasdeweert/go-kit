@@ -1,4 +1,4 @@
-module github.com/Sef1995/go-kit
+module github.com/sebasdeweert/go-kit
 
 go 1.15
 

@@ -6,9 +6,9 @@ import (
 	"time"
 
 	"github.com/go-redis/redis"
-	"github.com/Sef1995/go-kit/cache"
-	"github.com/Sef1995/go-kit/encoding"
-	"github.com/Sef1995/go-kit/encoding/gob"
+	"github.com/sebasdeweert/go-kit/cache"
+	"github.com/sebasdeweert/go-kit/encoding"
+	"github.com/sebasdeweert/go-kit/encoding/gob"
 )
 
 // Cache combines the Cache and redis.Cmdable interfaces.

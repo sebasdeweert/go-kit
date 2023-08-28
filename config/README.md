@@ -1,4 +1,4 @@
-This package is part of the [go-kit](https://github.com/Sef1995/go-kit).
+This package is part of the [go-kit](https://github.com/sebasdeweert/go-kit).
 
 # Config loader
 

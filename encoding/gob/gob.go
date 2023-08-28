@@ -4,8 +4,8 @@ import (
 	"bytes"
 	"encoding/gob"
 
-	"github.com/Sef1995/go-kit/encoding"
-	"github.com/Sef1995/go-kit/types"
+	"github.com/sebasdeweert/go-kit/encoding"
+	"github.com/sebasdeweert/go-kit/types"
 )
 
 type encoder struct{}

@@ -13,16 +13,16 @@ prepare:
 	make deps
 
 deps:
-	GOPRIVATE=github.com/Sef1995
+	GOPRIVATE=github.com/sebasdeweert
 	go mod tidy
 
 mocks:
 	rm -rf mocks
 	find . -name *_mocks.go -exec rm -f {} +
 	mkdir -p mocks
-	$$GOPATH/bin/mockgen -package=mocks github.com/Sef1995/go-kit/wrappers/http Client > mocks/http_mocks.go
+	$$GOPATH/bin/mockgen -package=mocks github.com/sebasdeweert/go-kit/wrappers/http Client > mocks/http_mocks.go
 	$$GOPATH/bin/mockgen -package=mocks net/http Handler > mocks/http_handler_mocks.go
-	$$GOPATH/bin/mockgen -package mocks github.com/Sef1995/go-kit/encoding Encoder > mocks/encoding_mocks.go
+	$$GOPATH/bin/mockgen -package mocks github.com/sebasdeweert/go-kit/encoding Encoder > mocks/encoding_mocks.go
 	$$GOPATH/bin/mockgen -package mocks github.com/go-redis/redis Cmdable,Pipeliner > mocks/redis_mocks.go
 	$$GOPATH/bin/mockgen -package mocks github.com/sirupsen/logrus Hook > mocks/logrus_mocks.go
 
@@ -40,7 +40,7 @@ cover:
 	go tool cover -func coverage.txt
 
 lint:
-	$$GOPATH/bin/revive -config vendor/github.com/Sef1995/go-kit/revive.toml -formatter friendly $$(find . -name "*.go" | grep -v vendor | grep -v service | grep -v mocks | uniq)
+	$$GOPATH/bin/revive -config vendor/github.com/sebasdeweert/go-kit/revive.toml -formatter friendly $$(find . -name "*.go" | grep -v vendor | grep -v service | grep -v mocks | uniq)
 
 vet:
 	go vet $$(go list ./...)

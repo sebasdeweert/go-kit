@@ -6,7 +6,7 @@ import (
 
 	"github.com/jmoiron/sqlx"
 
-	wsql "github.com/Sef1995/go-kit/wrappers/sql"
+	wsql "github.com/sebasdeweert/go-kit/wrappers/sql"
 )
 
 type SQLXNamedStmt interface {

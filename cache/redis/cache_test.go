@@ -7,12 +7,12 @@ import (
 
 	"github.com/go-redis/redis"
 	"github.com/golang/mock/gomock"
+	"github.com/sebasdeweert/go-kit/cache"
+	"github.com/sebasdeweert/go-kit/encoding/gob"
+	"github.com/sebasdeweert/go-kit/mocks"
+	"github.com/sebasdeweert/go-kit/test"
+	"github.com/sebasdeweert/go-kit/types"
 	. "github.com/smartystreets/goconvey/convey"
-	"github.com/Sef1995/go-kit/cache"
-	"github.com/Sef1995/go-kit/encoding/gob"
-	"github.com/Sef1995/go-kit/mocks"
-	"github.com/Sef1995/go-kit/test"
-	"github.com/Sef1995/go-kit/types"
 )
 
 func Test_NewCache(t *testing.T) {

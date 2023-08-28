@@ -6,7 +6,7 @@ import (
 
 	. "github.com/smartystreets/goconvey/convey"
 
-	"github.com/Sef1995/go-kit/wrappers/sql"
+	"github.com/sebasdeweert/go-kit/wrappers/sql"
 )
 
 func Test_Rows(t *testing.T) {

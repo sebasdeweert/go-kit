@@ -5,8 +5,8 @@ import (
 	"encoding/gob"
 	"testing"
 
+	"github.com/sebasdeweert/go-kit/types"
 	. "github.com/smartystreets/goconvey/convey"
-	"github.com/Sef1995/go-kit/types"
 )
 
 func Test_NewEncoder(t *testing.T) {

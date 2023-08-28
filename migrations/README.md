@@ -13,7 +13,7 @@ import (
   "database/sql"
 
   _ "github.com/go-sql-driver/mysql" // Load MySQL driver.
-  "github.com/Sef1995/go-kit/migrations"
+  "github.com/sebasdeweert/go-kit/migrations"
 )
 
 // NewDB returns a new DB and executes all pending migrations.
