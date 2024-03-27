@@ -18,5 +18,5 @@ require (
 	github.com/satori/go.uuid v1.2.0
 	github.com/sirupsen/logrus v1.7.0
 	github.com/smartystreets/goconvey v1.6.4
-	google.golang.org/protobuf v1.25.0
+	google.golang.org/protobuf v1.33.0
 )
